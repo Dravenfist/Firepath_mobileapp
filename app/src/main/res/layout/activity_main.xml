@@ -1,0 +1,44 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirePath"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#D32F2F" />
+
+    <TextView
+        android:id="@+id/fireStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔥 Fire Alert: Ongoing at Zone 145"
+        android:padding="10dp"
+        android:background="#FFCDD2"
+        android:textColor="#B71C1C"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnStartNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Safe Route Navigation"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnReportIncident"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Report Fire Incident"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

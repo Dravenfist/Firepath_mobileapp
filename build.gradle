@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = "https://api.mapbox.com/downloads/v2/releases/maven"
+            credentials {
+                username = "mapbox"
+                password = System.getenv("MAPBOX_DOWNLOADS_TOKEN") ?: project.findProperty("MAPBOX_DOWNLOADS_TOKEN")
+            }
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.0.4'
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = "https://api.mapbox.com/downloads/v2/releases/maven"
+            credentials {
+                username = "mapbox"
+                password = System.getenv("MAPBOX_DOWNLOADS_TOKEN") ?: project.findProperty("MAPBOX_DOWNLOADS_TOKEN")
+            }
+        }
+    }
+}

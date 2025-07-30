@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firepath_mobileapp">
+
+    <!-- Permissions for Internet & Location -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FirePath"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- ✅ Mapbox Access Token -->
+        <meta-data
+            android:name="com.mapbox.token"
+            android:value="pk.eyJ1IjoiZmlyZXBhdGgiLCJhIjoiY21kcHA5dzJ1MDRhaTJscjVkM2k2M2I0MiJ9.TQFk3ZTHAt-ZiNus0XfppQ" />
+
+        <!-- ✅ Firebase: Notification Channel -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="fire_alerts_channel" />
+
+        <!-- 🔰 Main launcher activity -->
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 🔰 Additional app screens -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".ReportFireActivity" />
+
+    </application>
+</manifest>

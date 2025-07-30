@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55941264588",
+    "project_id": "firepath-mobileapp",
+    "storage_bucket": "firepath-mobileapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55941264588:android:6b87804431e42a32573e69",
+        "android_client_info": {
+          "package_name": "com.example.firepath_mobileapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWc5pNQ5NwqZ73EiHHR6waGzzF2SKqxSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
